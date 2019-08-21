@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BasaurikoJaiak2019</string>
+    <string name="programa">Programa de Fiestas</string>
+    <string name="cuadrillas">Cuadrillas</string>
+    <string name="localizacion">Lonjas</string>
+    <string name="title_activity_calendario">Calendario</string>
+    <string name="ProgramaTitulo">Programa día</string>
+    <string name="CuadrillasTitulo">Cuadrillas</string>
+</resources>
