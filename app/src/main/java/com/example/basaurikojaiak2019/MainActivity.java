@@ -14,7 +14,7 @@ import com.bartbergmans.gradientbutton.views.GradientButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    private GradientButton botonPrograma, botonCuadrilla;
+    private GradientButton botonPrograma, botonCuadrilla, botonMapa;
     private Intent intent;
 
     @Override
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         botonPrograma = findViewById(R.id.boton1);
         botonCuadrilla = findViewById(R.id.boton2);
+        botonMapa = findViewById(R.id.boton3);
     }
 
     public void onclick(View v){
@@ -43,6 +44,11 @@ public class MainActivity extends AppCompatActivity {
 
         if(boton.getId() == botonCuadrilla.getId()){
             intent = new Intent(this,Cuadrillas.class);
+            startActivity(intent);
+        }
+
+        if(boton.getId() == botonMapa.getId()){
+            intent = new Intent(this,MapsActivity.class);
             startActivity(intent);
         }
     }
