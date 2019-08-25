@@ -8,6 +8,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -40,9 +41,56 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng basauri = new LatLng(43.2305085, -2.9077631);
-        //mMap.addMarker(new MarkerOptions().position(ogeta).title("Ogeta Bat"));
-        
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(basauri));
+        LatLng basauri = new LatLng(43.2370221, -2.8846411);
+
+        LatLng alaiak = new LatLng(43.2305085, -2.9077631);
+        LatLng aldatxa = new LatLng(43.2305085, -2.9077631);
+        LatLng basajaunak = new LatLng(43.2305085, -2.9077631);
+        LatLng edurre = new LatLng(43.2305085, -2.9077631);
+        LatLng hauspoak = new LatLng(43.2305085, -2.9077631);
+        LatLng itsaslapurrak = new LatLng(43.2305085, -2.9077631);
+        LatLng laguntasuna = new LatLng(43.2305085, -2.9077631);
+        LatLng mozkorrak = new LatLng(43.2305085, -2.9077631);
+        LatLng ogeta = new LatLng(43.2365634, -2.8921682);
+        LatLng ontzak = new LatLng(43.2305085, -2.9077631);
+        LatLng txano = new LatLng(43.2305085, -2.9077631);
+        LatLng txikerrak = new LatLng(43.2305085, -2.9077631);
+        LatLng urbiko = new LatLng(43.23756, -2.8915322);
+        LatLng zigorrak = new LatLng(43.2305085, -2.9077631);
+        LatLng zoroak = new LatLng(43.2305085, -2.9077631);
+
+        //mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.
+        //                fromResource(R.drawable.alaiakico)).anchor(1.0f,1.0f).position(alaiak).title(String.valueOf(R.string.Alaiak)));
+        ///mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.
+        //                fromResource(R.drawable.alaiakico)).anchor(1.0f,1.0f).position(aldatxa).title(String.valueOf(R.string.Aldatxa)));
+        //mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.
+        //                fromResource(R.drawable.alaiakico)).anchor(1.0f,1.0f).position(basajaunak).title(String.valueOf(R.string.Basajaunak)));
+       // mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.
+        //                fromResource(R.drawable.alaiakico)).anchor(1.0f,1.0f).position(edurre).title(String.valueOf(R.string.Edurre)));
+        //mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.
+        //                fromResource(R.drawable.alaiakico)).anchor(1.0f,1.0f).position(hauspoak).title(String.valueOf(R.string.Hauspoak)));
+       // mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.
+        //                fromResource(R.drawable.alaiakico)).anchor(1.0f,1.0f).position(itsaslapurrak).title(String.valueOf(R.string.Itsaslapurrak)));
+        //mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.
+        //                fromResource(R.drawable.alaiakico)).anchor(1.0f,1.0f).position(laguntasuna).title(String.valueOf(R.string.Laguntasuna)));
+        //mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.
+        //                fromResource(R.drawable.alaiakico)).anchor(1.0f,1.0f).position(mozkorrak).title(String.valueOf(R.string.Mozkorrak)));
+        mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.
+                fromResource(R.drawable.alaiakico)).anchor(1.0f,1.0f).position(ogeta).title("Ogeta Bat"));
+        //mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.
+        //                fromResource(R.drawable.alaiakico)).anchor(1.0f,1.0f).position(ontzak).title(String.valueOf(R.string.Ontzak)));
+        //mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.
+        //                fromResource(R.drawable.alaiakico)).anchor(1.0f,1.0f).position(txano).title(String.valueOf(R.string.Txano)));
+        //mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.
+        //                fromResource(R.drawable.alaiakico)).anchor(1.0f,1.0f).position(txikerrak).title(String.valueOf(R.string.Txikerrak)));
+        mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.
+                        fromResource(R.drawable.basajaico)).anchor(1.0f,1.0f).position(urbiko).title(String.valueOf("Urbiko Lagunak")));
+        //mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.
+        //                fromResource(R.drawable.alaiakico)).anchor(1.0f,1.0f).position(zigorrak).title(String.valueOf(R.string.Zigorrak)));
+        //mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.
+        //                fromResource(R.drawable.alaiakico)).anchor(1.0f,1.0f).position(zoroak).title(String.valueOf(R.string.Zoroak)));
+
+        //mMap.moveCamera(CameraUpdateFactory.newLatLng(basauri));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(basauri,14));
     }
 }

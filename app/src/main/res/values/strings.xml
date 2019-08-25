@@ -7,4 +7,21 @@
     <string name="ProgramaTitulo">Programa día</string>
     <string name="CuadrillasTitulo">Cuadrillas</string>
     <string name="title_activity_maps">Map</string>
+
+        <string name="Alaiak">Alaiak</string>
+        <string name="Aldatxa">Aldatxa</string>
+        <string name="Basajaunak">Basajaunak</string>
+        <string name="Edurre">Edurre</string>
+        <string name="Hauspoak">Hauspoak</string>
+        <string name="Itsaslapurrak">Itsaslapurrak</string>
+        <string name="Laguntasuna">Laguntasuna</string>
+        <string name="Mozkorrak">Mozkorrak</string>
+        <string name="Ogeta">Ogeta Bat</string>
+        <string name="Ontzak">Ontzak</string>
+        <string name="Txano">Txano</string>
+        <string name="Txikerrak">Txikerrak</string>
+        <string name="Urbiko">Urbiko</string>
+        <string name="Zigorrak">Zigorrak</string>
+        <string name="Zoroak">Zoroak</string>
+
 </resources>
