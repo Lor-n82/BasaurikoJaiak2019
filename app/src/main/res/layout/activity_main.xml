@@ -53,6 +53,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:clickable="true"
+        android:onClick="onclick"
         android:text="@string/localizacion"
         app:end_color="#9C27B0"
         app:fill_color="#E91E63"
