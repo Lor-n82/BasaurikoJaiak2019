@@ -39,7 +39,7 @@ public class AdapterCuadrilla extends RecyclerView.Adapter<AdapterCuadrilla.Cuad
 
         holder.foto.setAnimation(AnimationUtils.loadAnimation(mContext,R.anim.fade_transition_animation));
 
-        holder.clCua.setAnimation(AnimationUtils.loadAnimation(mContext,R.anim.fade_scale_animation));
+        holder.clCua.setAnimation(AnimationUtils.loadAnimation(mContext,R.anim.fade_transition_animation));
 
         holder.titulo.setText(mData.get(position).getNombreCuadrilla());
         holder.descripcion.setText(mData.get(position).getDescripcion());

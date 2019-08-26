@@ -3,6 +3,8 @@ package com.example.basaurikojaiak2019;
 import androidx.fragment.app.FragmentActivity;
 
 import android.os.Bundle;
+import android.view.Window;
+import android.view.WindowManager;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -19,11 +21,21 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_maps);
+
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+
+
+
     }
 
 
@@ -43,12 +55,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         // Add a marker in Sydney and move the camera
         LatLng basauri = new LatLng(43.2370221, -2.8846411);
 
-        LatLng alaiak = new LatLng(43.2305085, -2.9077631);
+        LatLng alaiak = new LatLng(43.239052, -2.8830202);
         LatLng aldatxa = new LatLng(43.2305085, -2.9077631);
         LatLng basajaunak = new LatLng(43.2305085, -2.9077631);
         LatLng edurre = new LatLng(43.2305085, -2.9077631);
-        LatLng hauspoak = new LatLng(43.2305085, -2.9077631);
-        LatLng itsaslapurrak = new LatLng(43.2305085, -2.9077631);
+        LatLng hauspoak = new LatLng(43.239113, -2.8824882);
+        LatLng itsaslapurrak = new LatLng(43.239113, -2.8824882);
         LatLng laguntasuna = new LatLng(43.2305085, -2.9077631);
         LatLng mozkorrak = new LatLng(43.2305085, -2.9077631);
         LatLng ogeta = new LatLng(43.2365634, -2.8921682);
@@ -59,16 +71,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng zigorrak = new LatLng(43.2305085, -2.9077631);
         LatLng zoroak = new LatLng(43.2305085, -2.9077631);
 
-        //mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.
-        //                fromResource(R.drawable.alaiakico)).anchor(1.0f,1.0f).position(alaiak).title(String.valueOf(R.string.Alaiak)));
+        mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.
+                        fromResource(R.drawable.alaiakico)).anchor(1.0f,1.0f).position(alaiak).title("Alaiak"));
         ///mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.
         //                fromResource(R.drawable.alaiakico)).anchor(1.0f,1.0f).position(aldatxa).title(String.valueOf(R.string.Aldatxa)));
         //mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.
         //                fromResource(R.drawable.alaiakico)).anchor(1.0f,1.0f).position(basajaunak).title(String.valueOf(R.string.Basajaunak)));
        // mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.
         //                fromResource(R.drawable.alaiakico)).anchor(1.0f,1.0f).position(edurre).title(String.valueOf(R.string.Edurre)));
-        //mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.
-        //                fromResource(R.drawable.alaiakico)).anchor(1.0f,1.0f).position(hauspoak).title(String.valueOf(R.string.Hauspoak)));
+        mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.
+                        fromResource(R.drawable.alaiakico)).anchor(1.0f,1.0f).position(hauspoak).title("Hauspoak"));
        // mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.
         //                fromResource(R.drawable.alaiakico)).anchor(1.0f,1.0f).position(itsaslapurrak).title(String.valueOf(R.string.Itsaslapurrak)));
         //mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.

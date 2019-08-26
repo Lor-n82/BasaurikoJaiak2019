@@ -39,7 +39,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ItemViewHolder> {
 
         holder.foto.setAnimation(AnimationUtils.loadAnimation(mContext,R.anim.fade_transition_animation));
 
-        holder.clPro.setAnimation(AnimationUtils.loadAnimation(mContext,R.anim.fade_scale_animation));
+        holder.clPro.setAnimation(AnimationUtils.loadAnimation(mContext,R.anim.fade_transition_animation));
 
         holder.titulo.setText(mData.get(position).getTitulo());
         holder.descripcion.setText(mData.get(position).getDescripcion());

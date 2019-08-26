@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     tools:context=".MainActivity">
 
     <ImageView
@@ -22,87 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="312dp" />
-
-    <com.bartbergmans.gradientbutton.views.GradientButton
-        android:id="@+id/Boton4"
-        android:layout_width="120dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:clickable="true"
-        android:text="Prueba4"
-        app:end_color="#9C27B0"
-        app:fill_color="#E91E63"
-        app:filled="false"
-        android:onClick="onclick"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/guideline3"
-        app:start_color="#673AB7" />
-
-    <com.bartbergmans.gradientbutton.views.GradientButton
-        android:id="@+id/boton3"
-        android:layout_width="120dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:clickable="true"
-        android:onClick="onclick"
-        android:text="@string/localizacion"
-        app:end_color="#9C27B0"
-        app:fill_color="#E91E63"
-        app:filled="false"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline3"
-        app:start_color="#673AB7" />
-
-    <com.bartbergmans.gradientbutton.views.GradientButton
-        android:id="@+id/boton2"
-        android:onClick="onclick"
-        android:layout_width="120dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:clickable="true"
-        android:text="@string/cuadrillas"
-        app:end_color="#9C27B0"
-        app:fill_color="#E91E63"
-        app:filled="false"
-        app:layout_constraintBottom_toTopOf="@+id/guideline3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/guideline"
-        app:start_color="#673AB7" />
-
-    <com.bartbergmans.gradientbutton.views.GradientButton
-        android:id="@+id/boton1"
-        android:layout_width="120dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:clickable="true"
-        android:onClick="onclick"
-        android:text="@string/programa"
-        app:end_color="#9C27B0"
-        app:fill_color="#E91E63"
-        app:filled="false"
-        app:layout_constraintBottom_toTopOf="@+id/guideline3"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline"
-        app:start_color="#673AB7" />
+        app:layout_constraintGuide_begin="342dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -116,12 +37,92 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="459dp" />
+        app:layout_constraintGuide_begin="489dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="606dp" />
+        app:layout_constraintGuide_begin="636dp" />
+
+    <com.bartbergmans.gradientbutton.views.GradientButton
+        android:id="@+id/boton1"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:onClick="onclick"
+        android:text="@string/programa"
+        app:end_color="#D5A23D"
+        app:fill_color="#44974F"
+        app:filled="true"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:start_color="#44974F" />
+
+    <com.bartbergmans.gradientbutton.views.GradientButton
+        android:id="@+id/Boton4"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:onClick="onclick"
+        android:text="Prueba4"
+        app:end_color="#D5A23D"
+        app:fill_color="#44974F"
+        app:filled="true"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:start_color="#44974F" />
+
+    <com.bartbergmans.gradientbutton.views.GradientButton
+        android:id="@+id/boton3"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:onClick="onclick"
+        android:text="@string/localizacion"
+        app:end_color="#D5A23D"
+        app:fill_color="#44974F"
+        app:filled="true"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:start_color="#44974F" />
+
+    <com.bartbergmans.gradientbutton.views.GradientButton
+        android:id="@+id/boton2"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:onClick="onclick"
+        android:text="@string/cuadrillas"
+        app:end_color="#D5A23D"
+        app:fill_color="#44974F"
+        app:filled="true"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:start_color="#44974F" />
 </androidx.constraintlayout.widget.ConstraintLayout>
